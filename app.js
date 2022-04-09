@@ -17,6 +17,7 @@ db.serialize(function () {
 	db.run("INSERT INTO user VALUES ('privilegedUser', 'privilegedUser1', 'Administrator')");
 });
 
+///sql injection assignment
 
 app.get('/', function (req, res) {
     res.sendFile('index.html');
